@@ -32,13 +32,9 @@
    /* margin-left: 4px; */
 }
 .imageBox {
-   /* border:2px solid red; */
-   height: "auto";
-   flex: 0.8;
-   margin: auto;
-   padding: 20px;
-   border-right: 1px solid gray;
-   border-bottom: 1px solid gray;
+   width: 100%;
+   margin-top: 70px;
+   margin-bottom: -70px;
 }
 .subImages {
    margin: 50px;
@@ -57,7 +53,7 @@
    margin-left: 5px;
    color: white;
    font-size: 18px;
-   margin-top: -40px;
+   margin-top: -20px;
 
    /* padding: 5px; */
 }
@@ -193,11 +189,28 @@
    .detailsTitle {
       display: block;
    }
-
+   .ImagePane {
+      display: flex;
+      flex-direction: column;
+   }
+   .subImages {
+      display: flex;
+   }
    .box {
       display: flex;
       flex-direction: column;
       flex: 1;
+   }
+   #imgTxt {
+      text-align: center;
+   }
+   .imageBox {
+      margin-left: 20px;
+      width: 90%;
+   }
+   .subImages {
+      justify-content: space-evenly;
+      display: flex;
    }
    .container {
       flex-wrap: wrap;
