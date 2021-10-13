@@ -10,42 +10,42 @@ export default function ImagesPane() {
    const [image, setImage] = useState(crello);
    return (
       <div className={styles.ImagePane}>
-         <div className={styles.subImages}>
-            <p className={styles.title}>
-               Select
-               <br />
-               your
-               <br />
-               Image
-            </p>
+         <div>
             <div>
-               <Image
-                  src={crello}
-                  width={70}
-                  height={100}
-                  onClick={() => setImage(crello)}
-               />
+               <p id={styles.imgTxt} className={styles.title}>
+                  Select your Image
+               </p>
             </div>
+            <div className={styles.subImages}>
+               <div>
+                  <Image
+                     src={crello}
+                     width={250}
+                     height={250}
+                     onClick={() => setImage(crello)}
+                  />
+               </div>
 
-            <div>
-               <Image
-                  src={profile}
-                  width={70}
-                  height={100}
-                  onClick={() => setImage(profile)}
-               />
-            </div>
-            <div>
-               <Image
-                  src={daniel}
-                  width={70}
-                  height={100}
-                  onClick={() => setImage(daniel)}
-               />
+               <div>
+                  <Image
+                     src={profile}
+                     width={250}
+                     height={250}
+                     onClick={() => setImage(profile)}
+                  />
+               </div>
+               <div>
+                  <Image
+                     src={daniel}
+                     width={250}
+                     height={250}
+                     onClick={() => setImage(daniel)}
+                  />
+               </div>
             </div>
          </div>
 
-         <div class={styles.imageBox}>
+         <div className={styles.imageBox}>
             <div>
                <Image src={image} layout="responsive" />
             </div>
